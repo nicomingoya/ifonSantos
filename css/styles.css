@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../images/fondo/fondo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+/*HEDER*/
+
+
+header{
+    position: sticky;
+    top: 0;
+}
+
+nav{
+    background-color: black;
+    height: 30vh;
+    width: 100%;
+}
+
+.navpadre{
+    height: 30vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5 ,20%);
+    grid-template-rows: repeat(2, 50%);
+    grid-template-areas: 
+    "nav1 nav2 nav2 nav3 nav3"
+    "nav6 nav7 nav8 nav9 nav10";
+    align-items: center;
+}
+
+    .navpadre { transition: transform 1.0s ease-in-out;
+    }
+    .navpadre img:hover{
+        transform: scale(1.1);
+    }
+
+    .navpadre { transition: transform 1.0s ease-in-out;
+    }
+    .navpadre a:hover{
+        transform: scale(1.1);
+        background-color: rgb(161, 81, 185);
+    }
+
+.navpadre a{
+    text-decoration: none;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/* Establece el fondo con un degradado de azul a blanco */
+.degrade-text {
+    background-image: linear-gradient(to right, rgb(161, 81, 185), rgb(93, 139, 133));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 1rem;
+    font-family: 'Nosifer';
+    
+}
+
+
+.navhijo-1{
+    grid-area: nav1;
+    margin-left: 20%;
+    margin-top: 10px;
+
+}
+
+.navhijo-1 img{
+    height: 95px;
+    width: 190px;
+}
+
+.navhijo-2{
+    grid-area: nav2;
+    display: flex;
+    justify-content: right;
+    margin-right: 30%;
+}
+
+.navhijo-2 img{
+    height: 100px;
+    width: 100px;
+    border-radius: 1000%;
+}
+
+.navhijo-3{
+    grid-area: nav3;
+    display: flex;
+    justify-content: right;
+    padding: 5%;
+    align-self: center;
+}
+
+.navhijo-3 img{
+    height: 80px;
+    width: 80px;
+    border-radius: 30%;
+}
+
+.navhijo-6{
+    grid-area: nav6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navhijo-7{
+    grid-area: nav7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}.navhijo-8{
+    grid-area: nav8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}.navhijo-9{
+    grid-area: nav9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}.navhijo-10{
+    grid-area: nav10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*main*/
+
+.galaxia{
+    background-image: url(../images/pagPrincipal/fondohorizontal.png);
+    background-attachment: fixed;
+    background-position: center;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+
+
+.box-1{
+
+}
+video {
+    width: 700px; 
+    height: 500px; 
+    display: flex;
+    justify-content: left; 
+    align-self: left;
+    flex-grow: 1;
+    flex-basis: 320px;
+    overflow: hidden;
+    transition: 0.5s;
+
+}
+video:hover {
+    flex-grow: 4;
+}
+
+.fondoipad{
+    background-image: url(../images/fondo/fondoipad.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.iphone-7{
+
+}
