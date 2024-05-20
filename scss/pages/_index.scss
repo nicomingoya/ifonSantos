@@ -1,0 +1,32 @@
+/*main*/
+
+.galaxia{
+    background-image: url(../images/pagPrincipal/fondohorizontal.png);
+    background-attachment: fixed;
+    background-position: center;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+
+
+.box-1{
+
+}
+video {
+    width: 700px; 
+    height: 500px; 
+    display: flex;
+    justify-content: left; 
+    align-self: left;
+    flex-grow: 1;
+    flex-basis: 320px;
+    overflow: hidden;
+    transition: 0.5s;
+
+}
+video:hover {
+    flex-grow: 4;
+}
