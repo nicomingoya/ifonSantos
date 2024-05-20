@@ -1,5 +1,10 @@
 /*main*/
-
+.fondoindex{
+    background-image: url(../images/fondo/fondo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
 .galaxia{
     background-image: url(../images/pagPrincipal/fondohorizontal.png);
     background-attachment: fixed;

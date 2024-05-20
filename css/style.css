@@ -1,3 +1,9 @@
+:root {
+  --altura_header1: 148px;
+  --altura_header2: 150px;
+  --altura_header3: 150px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -32,148 +38,218 @@ header {
   top: 0;
 }
 
-nav {
+.fondonav {
   background-color: black;
-  height: 40vh;
-  width: 100%;
 }
 
-.navpadre {
-  height: 30vh;
+.navpadre_M {
+  height: 20vh;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(5, 20%);
+  grid-template-columns: repeat(2, 50%);
   grid-template-rows: repeat(2, 50%);
-  grid-template-areas: "nav1 nav2 nav2 nav3 nav3" "nav6 nav7 nav8 nav9 nav10";
-  align-items: end;
+  grid-template-areas: "navm1 navm2 " "navm3 navm4";
+  align-items: center;
+  position: relative;
 }
 
-.navpadre {
-  transition: transform 1s ease-in-out;
-}
-
-.navpadre img:hover {
-  transform: scale(1.1);
-}
-
-.navpadre {
-  transition: transform 1s ease-in-out;
-}
-
-.navpadre a:hover {
-  transform: scale(1.1);
-  background-color: rgb(161, 81, 185);
-}
-
-.navpadre a {
+.navpadre_M a {
   text-decoration: none;
   text-align: center;
   text-transform: capitalize;
+  color: aliceblue;
 }
 
-/* Establece el fondo con un degradado de azul a blanco */
-.degrade-text {
-  background-image: linear-gradient(to right, rgb(161, 81, 185), rgb(93, 139, 133));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-size: 1rem;
-  font-family: "Nosifer";
+.navhijo-1M {
+  grid-area: navm1;
+  display: flex;
+  justify-content: left;
 }
 
-.navhijo-1 {
-  grid-area: nav1;
-  margin-left: 20%;
-  margin-top: 10px;
+.navhijo-1M img {
+  height: 90px;
+  width: 140px;
 }
 
-.navhijo-1 img {
-  height: 95px;
-  width: 190px;
-}
-
-.navhijo-2 {
-  grid-area: nav2;
+.navhijo-2M {
+  grid-area: navm2;
   display: flex;
   justify-content: right;
-  margin-right: 30%;
 }
 
-.navhijo-2 img {
-  height: 100px;
-  width: 100px;
+.navhijo-2M img {
+  height: 40px;
+  width: 60px;
   border-radius: 1000%;
 }
 
-.navhijo-3 {
-  grid-area: nav3;
+.navhijo-3M {
+  grid-area: navm3;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navhijo-3M a {
+  text-decoration: none;
+  font-size: 0.5rem;
+}
+
+.navhijo-4M {
+  grid-area: navm4;
   display: flex;
   justify-content: right;
-  padding: 5%;
-  align-self: center;
+  margin-right: 20px;
+  flex-wrap: wrap;
 }
 
-.navhijo-3 img {
-  height: 80px;
-  width: 80px;
-  border-radius: 30%;
+.menu_hamburguesa {
+  display: none;
 }
 
-.navhijo-6 {
-  grid-area: nav6;
+.menu_hamburguesa:checked + .ul_links {
+  height: calc(100vh - var(--altura_header));
+}
+
+.list_icon {
+  cursor: pointer;
+}
+
+.ul_links {
+  width: 100%;
+  background-color: #191919;
+  position: absolute;
+  top: var(--altura_header1);
+  height: 0;
+  overflow: hidden;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-.navhijo-7 {
-  grid-area: nav7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.links {
+  font-size: 2rem;
 }
 
-.navhijo-8 {
-  grid-area: nav8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.navhijo-1D {
+  display: none;
 }
 
-.navhijo-9 {
-  grid-area: nav9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.navhijo-2D {
+  display: none;
 }
 
-.navhijo-10 {
-  grid-area: nav10;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.navhijo-3D {
+  display: none;
 }
 
-.fondoindex {
-  background-image: url(../images/fondo/fondo.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: repeat;
+.navhijo-4D {
+  display: none;
 }
 
+.navhijo-5D {
+  display: none;
+}
+
+.navhijo-6D {
+  display: none;
+}
+
+.navhijo-7D {
+  display: none;
+}
+
+.navhijo-8D {
+  display: none;
+}
+
+/*(480PX)*/
+@media (min-width: 480px) {
+  .navpadre_M {
+    height: 30vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    grid-template-areas: "navm1 navm2 " "navm3 navm4";
+    align-items: center;
+  }
+  .navpadre_M {
+    transition: transform 1s ease-in-out;
+  }
+  .navpadre_M img:hover {
+    transform: scale(1.1);
+  }
+  .navpadre_M {
+    transition: transform 1s ease-in-out;
+  }
+  .navpadre_M a:hover {
+    transform: scale(1.1);
+  }
+  .navpadre_M a {
+    text-decoration: none;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  .navhijo-1M {
+    grid-area: navm1;
+    margin-top: 10px;
+  }
+  .navhijo-1M img {
+    height: 90px;
+    width: 140px;
+  }
+  .navhijo-2M {
+    grid-area: navm2;
+    display: flex;
+  }
+  .navhijo-2M img {
+    height: 40px;
+    width: 60px;
+  }
+  .navhijo-3M {
+    grid-area: navm3;
+  }
+  .navhijo-4M {
+    grid-area: navm4;
+  }
+  .ul_links {
+    top: var(--altura_header2);
+  }
+  .navhijo-1D {
+    display: none;
+  }
+  .navhijo-2D {
+    display: none;
+  }
+  .navhijo-3D {
+    display: none;
+  }
+  .navhijo-4D {
+    display: none;
+  }
+  .navhijo-5D {
+    display: none;
+  }
+  .navhijo-6D {
+    display: none;
+  }
+  .navhijo-7D {
+    display: none;
+  }
+  .navhijo-8D {
+    display: none;
+  }
+}
+/*(600PX)*/
+/*(820PX)*/
 /*Desktop(1000PX)*/
 /*header*/
 @media (min-width: 1000px) {
-  header {
-    position: sticky;
-    top: 0;
+  .navpadre_M {
+    display: none;
   }
-  nav {
-    background-color: black;
-    height: 30vh;
-    width: 100%;
-  }
-  .navpadre {
+  .navpadre_D {
     height: 30vh;
     width: 100%;
     display: grid;
@@ -182,20 +258,20 @@ nav {
     grid-template-areas: "nav1 nav2 nav2 nav3 nav3" "nav6 nav7 nav8 nav9 nav10";
     align-items: center;
   }
-  .navpadre {
+  .navpadre_D {
     transition: transform 1s ease-in-out;
   }
-  .navpadre img:hover {
+  .navpadre_D img:hover {
     transform: scale(1.1);
   }
   .navpadre {
     transition: transform 1s ease-in-out;
   }
-  .navpadre a:hover {
+  .navpadre_D a:hover {
     transform: scale(1.1);
     background-color: rgb(161, 81, 185);
   }
-  .navpadre a {
+  .navpadre_D a {
     text-decoration: none;
     text-align: center;
     text-transform: capitalize;
@@ -209,76 +285,90 @@ nav {
     font-size: 1rem;
     font-family: "Nosifer";
   }
-  .navhijo-1 {
+  .navhijo-1D {
     grid-area: nav1;
     margin-left: 20%;
     margin-top: 10px;
   }
-  .navhijo-1 img {
+  .navhijo-1D img {
     height: 95px;
     width: 190px;
   }
-  .navhijo-2 {
+  .navhijo-2D {
     grid-area: nav2;
     display: flex;
     justify-content: right;
     margin-right: 30%;
   }
-  .navhijo-2 img {
+  .navhijo-2D img {
     height: 100px;
     width: 100px;
     border-radius: 1000%;
   }
-  .navhijo-3 {
+  .navhijo-3D {
     grid-area: nav3;
     display: flex;
     justify-content: right;
     padding: 5%;
     align-self: center;
   }
-  .navhijo-3 img {
+  .navhijo-3D img {
     height: 80px;
     width: 80px;
     border-radius: 30%;
   }
-  .navhijo-6 {
+  .navhijo-4D {
     grid-area: nav6;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .navhijo-7 {
+  .navhijo-5D {
     grid-area: nav7;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .navhijo-8 {
+  .navhijo-6D {
     grid-area: nav8;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .navhijo-9 {
+  .navhijo-7D {
     grid-area: nav9;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .navhijo-10 {
+  .navhijo-8D {
     grid-area: nav10;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .fondoindex {
-    background-image: url(../images/fondo/fondo.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat;
+  .navhijo-1M {
+    display: none;
+  }
+  .navhijo-2M {
+    display: none;
+  }
+  .navhijo-3M {
+    display: none;
+  }
+  .navhijo-4M {
+    display: none;
   }
 }
+/*(1200PX)*/
 /*main*/
+.fondoindex {
+  background-image: url(../images/fondo/fondo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+
 .galaxia {
   background-image: url(../images/pagPrincipal/fondohorizontal.png);
   background-attachment: fixed;
