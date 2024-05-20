@@ -10,8 +10,9 @@ header{
 
 nav{
     background-color: black;
-    height: 30vh;
+    height: 40vh;
     width: 100%;
+
 }
 
 .navpadre{
@@ -23,7 +24,7 @@ nav{
     grid-template-areas: 
     "nav1 nav2 nav2 nav3 nav3"
     "nav6 nav7 nav8 nav9 nav10";
-    align-items: center;
+    align-items: end;
 }
 
     .navpadre { transition: transform 1.0s ease-in-out;
@@ -139,7 +140,7 @@ nav{
 
 
 
-/*main*/
+/*header*/
 
 @media (min-width: 1000px){
 
