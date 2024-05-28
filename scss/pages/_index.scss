@@ -89,65 +89,476 @@
     background-color: black;
 
 }
-.box_5M{
+
+.box_5M {
     grid-area: boxM5;
-    height: 100%;
-    width: 100%;
-}
-.box_5M img{
-    height: 100%;
-    width: 100%;
+    position: relative;
+    width: 160PX;
+    height: 250px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.box_6M{
+.box_5M .face-iphone {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.box_5M .front-iphone {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px black;
+}
+
+.box_5M .front-iphone img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.box_5M .back-iphone {
+    transform: perspective(600px) rotateY(180deg);
+    background-color: #191919;
+    padding: 1px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #191919;
+}
+
+.box_5M .back-iphone .link-iphone{
+    border-top: solid 1px #191919;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: aliceblue;
+    text-align: center;
+
+}
+.box_5M .back-iphone .link-iphone a {
+    color: aliceblue;
+    text-decoration: none;
+
+}
+
+.box_5M:hover .front-iphone {
+    transform: perspective(600px) rotateY(180deg);
+}
+.box_5M:hover .back-iphone {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+
+.box_6M {
     grid-area: boxM6;
-    height: 100%;
-    width: 100%;
-}
-.box_6M img{
-    height: 100%;
-    width: 100%;
+    position: relative;
+    width: 160PX;
+    height: 250px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.box_7M{
+.box_6M .face-watch {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.box_6M .front-watch {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px black;
+}
+
+.box_6M .front-watch img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.box_6M .back-watch {
+    transform: perspective(600px) rotateY(180deg);
+    background-color: #191919;
+    padding: 1px;
+    color: rgb(11, 12, 14);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #191919;
+}
+
+.box_6M .back-watch .link-watch{
+    border-top: solid 1px #191919;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: aliceblue;
+    text-align: center;
+
+}
+.box_6M .back-watch .link-watch a {
+    color: rgb(19, 21, 22);
+    text-decoration: none;
+
+}
+
+.box_6M:hover .front-watch {
+    transform: perspective(600px) rotateY(180deg);
+}
+.box_6M:hover .back-watch {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+
+.box_7M {
     grid-area: boxM7;
-    height: 100%;
-    width: 100%;
-}
-.box_7M img{
-    height: 100%;
-    width: 100%;
+    position: relative;
+    width: 160PX;
+    height: 250px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.box_8M{
+.box_7M .face-ipad {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.box_7M .front-ipad {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px black;
+}
+
+.box_7M .front-ipad img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box_7M .back-ipad {
+    transform: perspective(600px) rotateY(180deg);
+    background-color: #191919;
+    padding: 1px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #191919;
+}
+
+.box_7M .back-ipad .link-ipad{
+    border-top: solid 1px #191919;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: aliceblue;
+    text-align: center;
+
+}
+.box_7M .back-ipad .link-ipad a {
+    color: rgb(0, 2, 3);
+    text-decoration: none;
+
+}
+
+.box_7M:hover .front-ipad {
+    transform: perspective(600px) rotateY(180deg);
+}
+.box_7M:hover .back-ipad {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.box_8M {
     grid-area: boxM8;
-    height: 100%;
-    width: 100%;;
-}
-.box_8M img{
-    height: 100%;
-    width: 100%;
+    position: relative;
+    width: 160PX;
+    height: 250px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.box_9M{
+.box_8M .face-macbook {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.box_8M .front-macbook {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px black;
+}
+
+.box_8M .front-macbook img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.box_8M .back-macbook {
+    transform: perspective(600px) rotateY(180deg);
+    background-color: #191919;
+    padding: 1px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #191919;
+}
+
+.box_8M .back-macbook .link-macbook{
+    border-top: solid 1px #191919;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: aliceblue;
+    text-align: center;
+
+}
+.box_8M .back-macbook .link-macbook a {
+    color: aliceblue;
+    text-decoration: none;
+
+}
+
+.box_8M:hover .front-macbook{
+    transform: perspective(600px) rotateY(180deg);
+}
+.box_8M:hover .back-macbook {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.box_9M {
     grid-area: boxM9;
-    height: 100%;
-    width: 100%;
-}
-.box_9M img{
-    height: 100%;
-    width: 100%;
+    position: relative;
+    width: 160PX;
+    height: 250px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.box_10M{
+.box_9M .face-airpods {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.box_9M .front-airpods {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px black;
+}
+
+.box_9M .front-airpods img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.box_9M .back-airpods {
+    transform: perspective(600px) rotateY(180deg);
+    background-color: #191919;
+    padding: 1px;
+    color: rgb(11, 12, 14);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #191919;
+}
+
+.box_9M .back-airpods .link-airpods{
+    border-top: solid 1px #191919;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: aliceblue;
+    text-align: center;
+
+}
+.box_9M .back-airpods .link-airpods a {
+    color: rgb(19, 21, 22);
+    text-decoration: none;
+
+}
+
+.box_9M:hover .front-airpods {
+    transform: perspective(600px) rotateY(180deg);
+}
+.box_9M:hover .back-airpods {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+
+.box_10M {
     grid-area: boxM10;
-    height: 100%;
-    width: 100%;
+    position: relative;
+    width: 160PX;
+    height: 250px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
-.box_10M img{
-    height: 100%;
+
+.box_10M .face-charguer {
+    position: absolute;
     width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 1s;
 }
+
+.box_10M .front-charguer {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px black;
+}
+
+.box_10M .front-charguer img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.box_10M .back-charguer {
+    transform: perspective(600px) rotateY(180deg);
+    background-color: #191919;
+    padding: 1px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #191919;
+}
+
+.box_10M .back-charguer .link-charguer{
+    border-bottom: solid 1px #191919;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: aliceblue;
+    text-align: center;
+
+}
+.box_10M .back-charguer .link-charguer a {
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+
+}
+
+.box_10M:hover .front-charguer {
+    transform: perspective(600px) rotateY(180deg);
+}
+.box_10M:hover .back-charguer {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .box_D{
     display: none;
