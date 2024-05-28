@@ -4,10 +4,10 @@
 /*main*/
 
 .box_M{
-    width: 320px;
+    width: auto;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(2, 160px);
+    grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(7, auto);
     grid-template-areas: 
     "boxM1 boxM1"
@@ -21,11 +21,14 @@
 
 .box_1M{
     grid-area: boxM1;
-    width: 320px;
-    height: 100px;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
 .box_1M img{
-    width: 320px;
+    width: 100%;
     height: auto;
 }
 .box_D{
@@ -34,11 +37,12 @@
 
 .box_2M{
     grid-area: boxM3;
-    width: 320px;
+    background-color: white;
+    width: 100%;
     height: auto;
     margin: 10px auto 0;
     overflow: hidden;
-    background-color: white;
+
 }
 .box_2M ul{
     display: flex;
@@ -55,24 +59,26 @@
     width: 100%;
 }
 
-
-
 .box_3M{
     grid-area: boxM4;
+    background-color: black;
+    display: flex;
+    justify-content: center;
 }
 .box_3M img{
-    width: 320px;
-    height: 248px;
+    width: 100%;
+    height: 100%;
 }
 
-.box_4M{
+.box_4M {
     grid-area: boxM2;
-    width: 320px; 
-    height: 250px;
+    background-color: black;
+    width: 100%; 
+    height: 100%;
 }
 .box_4M video {
-    width: 320px; 
-    height: 248px; 
+    width: 100%; 
+    height: 100%; 
     display: flex;
     justify-content: center; 
     align-self: left;
@@ -80,6 +86,7 @@
     flex-basis: 320px;
     overflow: hidden;
     transition: 0.5s;
+    background-color: black;
 
 }
 .box_5M{
@@ -87,30 +94,59 @@
     height: 100%;
     width: 100%;
 }
+.box_5M img{
+    height: 100%;
+    width: 100%;
+}
+
 .box_6M{
     grid-area: boxM6;
-    height: 250px;
-    width: 160px;
+    height: 100%;
+    width: 100%;
 }
+.box_6M img{
+    height: 100%;
+    width: 100%;
+}
+
 .box_7M{
     grid-area: boxM7;
-    height: 250px;
-    width: 160px;
+    height: 100%;
+    width: 100%;
 }
+.box_7M img{
+    height: 100%;
+    width: 100%;
+}
+
 .box_8M{
     grid-area: boxM8;
-    height: 250px;
-    width: 160px;
+    height: 100%;
+    width: 100%;;
 }
+.box_8M img{
+    height: 100%;
+    width: 100%;
+}
+
 .box_9M{
     grid-area: boxM9;
-    height: 250px;
-    width: 160px;
+    height: 100%;
+    width: 100%;
 }
+.box_9M img{
+    height: 100%;
+    width: 100%;
+}
+
 .box_10M{
     grid-area: boxM10;
-    height: 250px;
-    width: 160px;
+    height: 100%;
+    width: 100%;
+}
+.box_10M img{
+    height: 100%;
+    width: 100%;
 }
 
 .box_D{
@@ -127,83 +163,69 @@
 
 @media (min-width: 480px){
 
-
-/*main*/
-
-.box_M{
-    width: 100%;
-    height: 280vh;
-    display: grid;
-    grid-template-columns: (2, 50%);
-    grid-template-rows: repeat(7, 40vh);
-    grid-template-areas: 
-    "boxM1 boxM1"
-    "boxM2 boxM2"
-    "boxM3 boxM3"
-    "boxM4 boxM4"
-    "boxM5 boxM5"
-    "boxM6 boxM6"
-    "boxM7 boxM7";
-}
-
-.box_1M{
-grid-area: boxM1;
-}
-.box_1M img{
-    width: 100%;
-    height: 100%;
-}
 .box_D{
     display: none;
 }
+}
+/*main*/
+/*.box_M{
+    width: 480px;
+}
 
-.box_2M{
-    grid-area: boxM2;
+.box_1M{
+    width: 100%;
+    height: 200px;
+}
+.box_1M img{
     width: 480px;
     height: auto;
-    margin: 10px auto 0;
-    overflow: hidden;
-    background-color: white;
-}
-.box_2M ul{
-    display: flex;
-    padding: 0;
-    width: 400%;
-    animation: carrusel 16s infinite alternate ease-in-out;
 }
 
-.box_2M li {
-    list-style: none;
-    width: 100%;
-    align-items: center;
+.box_2M{
+    width: 480px;
 }
+
 .box_2M img{
     width: 100%;
 }
 
-
-
-
-.box_3M{
-    grid-area: boxM3;
+.box_3M img{
+    width: 480px;
+    height: 300px;
 }
-.box_4M{
-    grid-area: boxM4;
+
+.box_4M {
+    width: 480px; 
+    height: 300px;
+}
+.box_4M video {
+    width: 480px; 
+    height: 300px; 
+    flex-basis: 480px;
 }
 .box_5M{
-    grid-area: boxM5;
+    height: 100%;
+    width: 100%;
 }
 .box_6M{
-    grid-area: boxM6;
+    height: 250px;
+    width: 160px;
 }
 .box_7M{
-    grid-area: boxM7;
+    height: 250px;
+    width: 160px;
 }
-
-
-
-.box_D{
-    display: none;
+.box_8M{
+    height: 250px;
+    width: 160px;
+}
+.box_9M{
+    height: 250px;
+    width: 160px;
+}
+.box_10M{
+    height: 250px;
+    width: 160px;
 }
 
 }
